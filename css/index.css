@@ -126,38 +126,77 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
 }
 p {
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 .container {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
 }
-.nav-container {
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px;
+  width: 100%;
+  margin: 0%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  margin-top: -1%;
+  background-color: #262b44;
 }
-.nav-container a {
-  padding: 30px;
-  color: black;
-  text-decoration-line: none;
+.navigation nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.navigation nav a {
+  text-decoration: none;
+  font-size: 2.3rem;
+  padding: 15px;
+  color: #D5B69D;
+  border: #64615C;
+  background: #081417;
+  border-radius: 3px;
+  margin-left: 0px;
+  margin-right: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.navigation img {
+  width: 30%;
+  margin-right: 0px;
+  margin-left: 1%;
+  margin-right: -50px;
+}
+main-pic img {
+  width: 10%;
 }
