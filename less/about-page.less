@@ -1,6 +1,114 @@
-main-pic{
-  img{
-    width: 10%
+body{
+  background-color: #D5B69D;
+}
+
+h1{
+  font-size: 3.0rem;
+  align-items: center;
+}
+
+.team{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 3%;
+
+
+  @media @mobile{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2%;
+      width: 90%;
+
+  }
+
+  .team-member{
+      padding: 10px;
+      width: 45%;
+
+      @media @mobile{
+          
+          margin-bottom: 2%;
+          width: 100%;
+  
+      }
+
+      img{
+          width: 100%;
+      }
+      h3{
+          color: black;
+          padding: 20px;
+      }
+  }
+}
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 3%;
+
+  @media @mobile{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2%;
+      width: 90%;
+
+  }
+
+  .about-us{
+
+      @media @mobile{
+          margin-bottom: 2%;
+          width: 90%;
+  
+      }
+
+      h2{
+          color: black;
+          padding: 20px;
+      }
+
+      p{
+          width: 50%;
+
+          @media @mobile{
+              
+              width: 100%;
+      
+          }
+      }
+
   }
   
+
+  .mission{
+
+      margin-left: -25%;
+      background-color: #D5B69D;
+
+      @media @mobile{
+          margin-bottom: 2%;
+          width: 90%;
+          margin-left: 0%;
+  
+      }
+      
+      h2{
+          color: black;
+          padding: 20px;
+      }
+
+      p{
+          width: 60%;
+
+          @media @mobile{
+              
+              width: 100%;
+      
+          }
+  
+      }
+  }
 }

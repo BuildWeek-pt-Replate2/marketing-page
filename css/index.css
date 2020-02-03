@@ -197,6 +197,97 @@ p {
   margin-left: 1%;
   margin-right: -50px;
 }
-main-pic img {
-  width: 10%;
+body {
+  background-color: #D5B69D;
+}
+h1 {
+  font-size: 3rem;
+  align-items: center;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 3%;
+}
+@media (max-width: 500px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    width: 90%;
+  }
+}
+.team .team-member {
+  padding: 10px;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .team .team-member {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+}
+.team .team-member img {
+  width: 100%;
+}
+.team .team-member h3 {
+  color: black;
+  padding: 20px;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 3%;
+}
+@media (max-width: 500px) {
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .top-section .about-us {
+    margin-bottom: 2%;
+    width: 90%;
+  }
+}
+.top-section .about-us h2 {
+  color: black;
+  padding: 20px;
+}
+.top-section .about-us p {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .top-section .about-us p {
+    width: 100%;
+  }
+}
+.top-section .mission {
+  margin-left: -25%;
+  background-color: #D5B69D;
+}
+@media (max-width: 500px) {
+  .top-section .mission {
+    margin-bottom: 2%;
+    width: 90%;
+    margin-left: 0%;
+  }
+}
+.top-section .mission h2 {
+  color: black;
+  padding: 20px;
+}
+.top-section .mission p {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .top-section .mission p {
+    width: 100%;
+  }
 }
