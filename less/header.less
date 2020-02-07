@@ -1,18 +1,17 @@
 .header {
-  background-color: @header-color;
+    background-color: @header-bg-color;
+    padding: 2vw;
 
-  .logo {
+    .logo {
 
-  }
-
-  .navigation {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: @light-font;
-      text-decoration: none;
     }
-  }
+
+    .navigation {
+        .nav-flex();
+
+        a {
+            .nav-link();
+        }
+    }
 }
 

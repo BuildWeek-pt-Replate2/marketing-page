@@ -162,18 +162,23 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .header {
   background-color: #595656;
+  padding: 2vw;
 }
 .header .navigation {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .header .navigation a {
   color: #F2F2F2;
   text-decoration: none;
+  font-size: 2rem;
+  margin-top: 5%;
 }
