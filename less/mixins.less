@@ -1,13 +1,27 @@
 
-.nav-flex() {
-  display: flex;
-  flex-direction: column;
+.nav-flex(@navDisplay, @flexDir) {
+  display: @navDisplay;
+  flex-direction: @flexDir;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.nav-link() {
+.nav-link(@fontSize) {
   color: @font-color-light;
   text-decoration: none;
-  font-size: 2rem;
-  margin-top: 5%;
+  font-size: @fontSize;
+  margin: 2vw;
+}
+
+.sec-center () {
+
+}
+
+.sec-right () {
+
+}
+
+.sec-left() {
+
 }

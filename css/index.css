@@ -157,9 +157,10 @@ h4 {
 }
 p {
   font-size: 1.6rem;
+  margin: 1.6vw 0;
 }
 .container {
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 0 5vw;
@@ -169,16 +170,38 @@ p {
 }
 .header {
   background-color: #595656;
-  padding: 2vw;
+  padding: 3vw 0;
 }
 .header .navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .header .navigation a {
   color: #F2F2F2;
   text-decoration: none;
   font-size: 2rem;
-  margin-top: 5%;
+  margin: 2vw;
+}
+.footer {
+  background-color: #595656;
+  padding: 3vw 0;
+}
+.footer .navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer .navigation a {
+  color: #F2F2F2;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin: 2vw;
+}
+.main section {
+  padding-top: 5vw;
 }
