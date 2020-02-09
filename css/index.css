@@ -463,3 +463,20 @@ p {
     align-items: center;
   }
 }
+.hiw {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+.faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+.faq section div {
+  padding: 15px 0;
+}
