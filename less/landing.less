@@ -1,5 +1,142 @@
 .main {
     section {
-        padding-top: 5vw;
+        padding-top: 20px;
+    }
+
+    section:last-child {
+        padding-bottom: 20px;
+    }
+
+    .sec-1 {
+        width: 100%;
+        height: 60vh;
+        color: @font-color-light;
+        .flex-mixin(column, center, center);
+
+        @media @tablet {
+            width: 60%;
+        }
+
+        @media @desktop {
+            width: 40%;
+        }
+
+        a {
+            .cta-button();
+        }
+
+        a:hover {
+            background-color: @button-hover;
+        }
+    }
+
+    .sec-2 {
+        height: 40vh;
+        width: 80%;
+        .flex-mixin(column, center, center);
+
+        .donate {
+            width: 100%;
+            margin-top: 25px;
+            font-size: 6rem;
+
+            .flex-mixin(row, space-between, baseline);
+        }
+
+        @media @tablet {
+            width: 60%;
+            align-items: flex-start;
+        }
+    }
+
+    .sec-3 {
+        height: 60vh;
+        width: 100%;
+        color: @font-color-light;
+        .flex-mixin(column, center, center);
+
+        @media @tablet {
+            width: 60%;
+        }
+
+        @media @desktop {
+            width: 40%;
+        }
+
+        a{
+            .cta-button();
+        }
+
+        a:hover {
+            background-color: @button-hover;
+        }
+    }
+
+    .sec-4 {
+        width: 100%;
+        .flex-mixin(column, center, center);
+
+        .photos {
+            .flex-mixin(row, center, center);
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .photos img {
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+        }
+
+        .photos img:hover {
+            border: 4px solid @button-hover;
+        }
+    }
+
+    .sec-5 {
+        width: 100%;
+        height: 40vh;
+        .flex-mixin(column, center, center);
+
+        @media @tablet {
+            width: 60%;
+        }
+
+        @media @desktop {
+            width: 40%;
+        }
+
+        a {
+            .cta-button();
+        }
+
+        a:hover {
+            background-color: @button-hover;
+        }
+    }
+
+    .hero-bg {
+        .img-bg(@hero-bg);
+    }
+
+    .support-bg {
+        .img-bg(@support-bg);
+    }
+
+    .sec-con-right {
+        .flex-mixin(row, center, center);
+
+        @media @tablet {
+            .flex-mixin(row, flex-end, center);
+        }
+    }
+
+    .sec-con-center {
+        .flex-mixin(row, center, center);
+
+        @media @tablet {
+            .flex-mixin(row, center, center);
+        }
     }
 }
