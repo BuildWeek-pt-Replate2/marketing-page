@@ -11,18 +11,24 @@
         width: 100%;
         min-height: 80vh;
         color: @font-color-light;
-        .flex-mixin(column, center, center);
+        .flex-mixin(column, center, flex-start);
 
         @media @tablet {
             width: 60%;
         }
 
-        @media @desktop {
-            width: 40%;
+        p {
+            font-size: 4rem;
+            margin: 30px 0;
+        }
+
+        h1 {
+            font-size: 8rem;
         }
 
         a {
             .cta-button();
+            font-size: 3rem;
         }
 
         a:hover {
@@ -51,25 +57,13 @@
     }
 
     .sec-3 {
-        min-height: 60vh;
+        min-height: 80vh;
         width: 100%;
         color: @font-color-light;
         .flex-mixin(column, center, center);
 
         @media @tablet {
             width: 60%;
-        }
-
-        @media @desktop {
-            width: 40%;
-        }
-
-        a{
-            .cta-button();
-        }
-
-        a:hover {
-            background-color: @button-hover;
         }
     }
 
@@ -106,7 +100,7 @@
         }
 
         @media @desktop {
-            width: 40%;
+            width: 50%;
         }
 
         a {
@@ -124,6 +118,27 @@
 
     .support-bg {
         .img-bg(@support-bg);
+    }
+
+    .sec-box {
+        .flex-mixin(column, center, center);
+
+        min-width: 20vw;
+        min-height: 20vh;
+
+        padding: 40px;
+
+        border-radius: 8px;
+
+        background-color: @bg-midtone;
+
+        a{
+            .cta-button();
+        }
+
+        a:hover {
+            background-color: @button-hover;
+        }
     }
 
     .sec-con-right {

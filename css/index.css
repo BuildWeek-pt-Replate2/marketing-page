@@ -4,6 +4,7 @@
   text-decoration: none;
   color: #f5f5f5;
   font-size: 2rem;
+  margin-top: 20px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -157,13 +158,13 @@ h2 {
   font-size: 4.6rem;
 }
 h3 {
-  font-size: 3.8rem;
+  font-size: 4rem;
 }
 h4 {
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 2.6rem;
   margin: 15px 0;
 }
 .container {
@@ -181,7 +182,7 @@ p {
 }
 @media ( min-width: 1000px ) {
   .container {
-    max-width: 1000px;
+    min-width: 1000px;
   }
 }
 .dark-bg {
@@ -189,7 +190,7 @@ p {
   color: #f5f5f5;
 }
 .midtone-bg {
-  background-color: #b09d61;
+  background-color: #9f7241;
   color: #f5f5f5;
 }
 .light-bg {
@@ -244,8 +245,8 @@ p {
 .header .navigation a {
   color: #f5f5f5;
   text-decoration: none;
-  font-size: 2rem;
-  margin: 0 10px;
+  font-size: 2.6rem;
+  margin: 0 5px;
   padding: 10px;
 }
 .header .navigation a:hover {
@@ -274,7 +275,7 @@ p {
   color: #f5f5f5;
   text-decoration: none;
   font-size: 0.85rem;
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 10px;
 }
 .main section {
@@ -290,17 +291,19 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 @media ( min-width: 750px ) {
   .main .sec-1 {
     width: 60%;
   }
 }
-@media ( min-width: 1000px ) {
-  .main .sec-1 {
-    width: 40%;
-  }
+.main .sec-1 p {
+  font-size: 4rem;
+  margin: 30px 0;
+}
+.main .sec-1 h1 {
+  font-size: 8rem;
 }
 .main .sec-1 a {
   padding: 15px 25px;
@@ -308,6 +311,8 @@ p {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 2rem;
+  margin-top: 20px;
+  font-size: 3rem;
 }
 .main .sec-1 a:hover {
   background-color: #83b20d;
@@ -337,7 +342,7 @@ p {
   }
 }
 .main .sec-3 {
-  min-height: 60vh;
+  min-height: 80vh;
   width: 100%;
   color: #f5f5f5;
   display: flex;
@@ -349,21 +354,6 @@ p {
   .main .sec-3 {
     width: 60%;
   }
-}
-@media ( min-width: 1000px ) {
-  .main .sec-3 {
-    width: 40%;
-  }
-}
-.main .sec-3 a {
-  padding: 15px 25px;
-  background-color: #467302;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 2rem;
-}
-.main .sec-3 a:hover {
-  background-color: #83b20d;
 }
 .main .sec-4 {
   width: 100%;
@@ -405,7 +395,7 @@ p {
 }
 @media ( min-width: 1000px ) {
   .main .sec-5 {
-    width: 40%;
+    width: 50%;
   }
 }
 .main .sec-5 a {
@@ -414,6 +404,7 @@ p {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 2rem;
+  margin-top: 20px;
 }
 .main .sec-5 a:hover {
   background-color: #83b20d;
@@ -435,6 +426,28 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main .sec-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20vw;
+  min-height: 20vh;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #9f7241;
+}
+.main .sec-box a {
+  padding: 15px 25px;
+  background-color: #467302;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.main .sec-box a:hover {
+  background-color: #83b20d;
 }
 .main .sec-con-right {
   display: flex;
