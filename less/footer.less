@@ -1,14 +1,13 @@
 
 .social-title {
-  display: flex;
+  .display();
   width: 100%;
-  justify-content: center;
   margin-top: 2%;
   margin-bottom: 2%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #081417;
-  border: #64615C;
+  background: @black;
+  border: @grey;
 
   @media @mobile {
       display: flex;
@@ -16,11 +15,48 @@
 
   
   h2 {
-      color: #D5B69D;
+      color: @brown;
       font-size: 40px;
 
       @media @mobile {
           text-align: center;
       }
   }
+}
+
+.section-3 {
+  .display();
+  flex-direction: row;
+  margin-left: -230px;
+  margin-top: -150px;
+
+  @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin-left: 22%;
+      margin-top: 10px;
+      margin-bottom: 10%;
+      padding: 2%;
+  }
+  
+
+  .fa {
+      padding: 140px 150px;
+      color: @black;
+      font-size: 40px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      
+      @media @mobile {
+          margin-top: 2%;
+          padding: 10px;
+
+      }
+
+    :hover {
+      opacity: 1;
+      color: #0B607B;
+    }
+}
 }
