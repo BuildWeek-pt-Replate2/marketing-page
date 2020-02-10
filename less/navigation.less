@@ -9,10 +9,24 @@
   margin-top: -1%;
   background-color: rgb(65, 82, 167);
 
+  @media @mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
   nav{
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin-top: -1%;
+      margin-bottom: 3%;
+  }
 
     a{
       text-decoration: none;
@@ -26,6 +40,13 @@
       margin-right: 30px;
       padding-top: 4px;
       padding-bottom: 4px;
+
+      @media @mobile {
+        font-size: 30px;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-right: 16%;
+    }
     }
   }
 
@@ -34,5 +55,83 @@
     margin-right: 0px;
     margin-left: 1%;
     margin-right: -50px;
+
+    @media @mobile {
+      width: 100%;
+      margin-top: 2%;
+      margin-left: -1%;
+  }
   }
 }
+
+// .navigation {
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   margin: 0%;
+//   flex-direction: row-reverse;
+//   padding-bottom: -1%;
+//   padding-top: 1%;
+//   margin-top: -1%;
+//   background: #FF3238;
+
+//   @media @mobile {
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column-reverse;
+//       margin-bottom: 2%;
+//   }
+
+//   nav {
+//       justify-content: space-between;
+//       margin-left: 11%;
+//       margin-top: 4%;
+//       padding-left: 0px;
+
+//       @media @mobile {
+//           display: flex;
+//           flex-direction: column;
+//           margin-top: -1%;
+//           margin-bottom: 3%;
+//       }
+      
+//       a {
+//           text-decoration: none;
+//           font-size: 34px;
+//           padding: 15px;
+//           color: white;
+//           border: white solid;
+//           background: #0B607B;
+//           border-radius: 3px;     
+//           margin-left: 0px;
+//           margin-right: 20px;
+//           padding-top: 4px;
+//           padding-bottom: 4px;
+
+//           @media @mobile {
+//               margin-bottom: 2%;
+//               margin-top: 1%;
+//               margin-right: 16%;
+//           }
+//   }
+//   a:hover{
+//       background-color: #28A40E;
+//       border-bottom: 5px solid #0B607B;
+//   }
+// }
+
+//   img {
+//       width: 30%;
+//       margin-right: 0px;
+//       margin-left: 1%;
+//       margin-right: -50px;
+
+//       @media @mobile {
+//           width: 100%;
+//           margin-top: 2%;
+//           margin-left: -1%;
+//       }
+      
+//   }
+
+// }
