@@ -440,31 +440,6 @@ h1 {
   margin-bottom: 2%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #28A40E;
-  border: white solid;
-}
-@media (max-width: 500px) {
-  .social-title {
-    display: flex;
-  }
-}
-.social-title h2 {
-  color: white;
-  font-size: 40px;
-}
-@media (max-width: 500px) {
-  .social-title h2 {
-    text-align: center;
-  }
-}
-.social-title {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background: #081417;
   border: #64615C;
 }
