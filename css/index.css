@@ -277,7 +277,6 @@ h1 {
 }
 .top-section {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-left: 3%;
 }
@@ -289,10 +288,12 @@ h1 {
     width: 90%;
   }
 }
+.top-section .about-us {
+  width: 50%;
+}
 @media (max-width: 500px) {
   .top-section .about-us {
     margin-bottom: 2%;
-    width: 90%;
   }
 }
 .top-section .about-us h2 {
@@ -308,7 +309,6 @@ h1 {
   }
 }
 .top-section .mission {
-  margin-left: -25%;
   background-color: #D5B69D;
 }
 @media (max-width: 500px) {
@@ -323,7 +323,7 @@ h1 {
   padding: 20px;
 }
 .top-section .mission p {
-  width: 60%;
+  width: 80%;
 }
 @media (max-width: 500px) {
   .top-section .mission p {
